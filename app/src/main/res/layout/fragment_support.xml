@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    tools:context=".ui.SupportFragment"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_collapseMode="none"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:text="Our Mission"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/speech" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:text="Our Vision"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/vision" />
+
+</LinearLayout>
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:padding="10dp"
+android:layout_gravity="end|bottom"
+android:orientation="horizontal">
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    app:contentPaddingRight="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    app:contentPaddingLeft="5dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Contact Support"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+</androidx.cardview.widget.CardView>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    app:fabSize="normal"
+    android:layout_margin="5dp"
+    android:id="@+id/fab"
+    app:srcCompat="@drawable/ic_phone_black_24dp"
+    android:tint="#fff"
+
+    android:layout_height="wrap_content"/>
+</LinearLayout>
+</FrameLayout>

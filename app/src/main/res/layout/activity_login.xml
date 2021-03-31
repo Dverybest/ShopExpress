@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f0f0f0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:padding="8dp"
+        tools:context=".LoginActivity">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/linear"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="100dp"
+                app:cardCornerRadius="50dp"
+                android:layout_height="100dp"
+                android:id="@+id/image"
+                android:layout_above="@id/linear"
+                android:layout_centerInParent="true"
+                app:strokeWidth="1dp"
+                android:layout_gravity="center"
+                app:strokeColor="#f0f0f0">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:src="@drawable/shopping_cart"
+                    android:tint="@color/colorAccent"
+                    android:layout_gravity="center"
+                    android:layout_height="80dp"/>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_toLeftOf="@id/name"
+                android:layout_above="@id/image"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="ShopExpress"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="email"
+            android:padding="5dp"
+            android:background="@drawable/roundedbutton"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:textColor="@android:color/black"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="8dp"
+            android:maxLines="1"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/roundedbutton"
+            android:hint="password"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:textColor="@android:color/black"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/login"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:text="Log in"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="-10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="10dp"
+                android:layout_weight="1"
+                android:background="#f0f0f0"
+                android:layout_height="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:text="OR"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="10dp"
+                android:layout_weight="1"
+                android:background="#f0f0f0"
+                android:layout_height="2dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/create"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:text="Create new Account"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</FrameLayout>

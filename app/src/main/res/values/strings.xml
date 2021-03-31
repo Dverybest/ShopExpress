@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ShopExpress</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="speech">Our mission is to carter to the needs of ever man, woman, boy or girl who loves to cook and loves to eat home cooked meals.
+    \nWe hope to encourage everyone who loves to cook, who wishes to learn to cook and who already loves to cook to keep cooking. </string>
+    <string name="vision">Our vision is to have our meal boxes in every home in Nigeria. To encourage people to stay healthy and enjoy life by offering an affordable solution to learning how
+    to cook and preparing meals at home.</string>
+</resources>

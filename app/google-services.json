@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "401888703143",
+    "firebase_url": "https://shopexpress1-7bd68.firebaseio.com",
+    "project_id": "shopexpress1-7bd68",
+    "storage_bucket": "shopexpress1-7bd68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401888703143:android:817917a1c14bc586a5e182",
+        "android_client_info": {
+          "package_name": "com.example.shopexpress1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401888703143-tnk0aov61p6ott223prlv0ioj7hj9q9f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shopexpress1",
+            "certificate_hash": "4032bfa6df2dbfadde0f0b64005be303d1d095a4"
+          }
+        },
+        {
+          "client_id": "401888703143-mgp75326t5tto5qlpkvfs0t8pd8sdubc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARSIg93UYS6wXXPlNrN7PiiJMsF0dMx1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401888703143-mgp75326t5tto5qlpkvfs0t8pd8sdubc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
